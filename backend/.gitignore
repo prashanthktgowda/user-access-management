@@ -1,0 +1,17 @@
+//create a ignore file for the backend folder
+# Node modules
+node_modules/
+# Build output
+dist/
+# Logs
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# dotenv environment variable files
+.env
+.env.test
+# Next.js build output
+.next/
+# Next.js static files
+out/

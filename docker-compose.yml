@@ -1,0 +1,15 @@
+version: '3.1'
+services:
+  postgres:
+    image: postgres
+    container_name: pg_dev
+    environment:
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+      POSTGRES_DB: mydb
+    ports:
+      - "5433:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
